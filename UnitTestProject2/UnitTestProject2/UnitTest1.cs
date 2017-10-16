@@ -11,15 +11,11 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMethod1()
         {
-            //Опрделяем драйвер чтобы работать именно с гугл хром
-            IWebDriver driver = new ChromeDriver();
-            //Переходим на гугл.ру
+           
+            IWebDriver driver = new ChromeDriver()
             driver.Navigate().GoToUrl("https://www.google.ru");
-            //Ищем элемент ввода информации на сайте гугл по айди
             IWebElement findEdit = driver.FindElement(By.Id("lst-ib"));
-            //Кликает по найденном элементу
             findEdit.Click();
-            //И вводим значение в этот элемент
             findEdit.SendKeys("Симбирсофт");
         }
     }
