@@ -17,6 +17,7 @@ namespace UnitTestProject1
             IWebElement findEdit = driver.FindElement(By.Id("lst-ib"));
             findEdit.Click();
             findEdit.SendKeys("Симбирсофт");
+          
         }
     }
 }
