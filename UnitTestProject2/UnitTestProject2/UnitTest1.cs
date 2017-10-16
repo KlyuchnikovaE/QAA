@@ -12,7 +12,7 @@ namespace UnitTestProject1
         public void TestMethod1()
         {
            
-            IWebDriver driver = new ChromeDriver()
+            IWebDriver driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://www.google.ru");
             IWebElement findEdit = driver.FindElement(By.Id("lst-ib"));
             findEdit.Click();
